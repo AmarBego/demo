@@ -1,26 +1,21 @@
-# Welcome to My Website
+# Welcome to My Demo Website
 
-## About Me
+This website documents my journey in learning PHP, MySQL, and Laravel from scratch. You'll find frequent updates as I navigate through this learning process.
 
-Hello! I'm Amar, a web developer with a passion for creating beautiful and functional websites.
-This uses a template from Tailwindui.com
+## Requirements
 
-### My Skills
+To utilize this code, follow these steps:
 
-- **Web Development**: HTML, CSS, JavaScript, React
-- **Back-end Development**: Node.js, MySQL, PHP
-- **Design**: Adobe Photoshop, Figma
+### 1. Set up Environment Variables
 
-## Projects
+- Rename `.env.example` to `.env`.
+- Configure the necessary SQL connection details in the `.env` file. I use this file to store configuration variables like database credentials. This practice allows me to push everything to my repository while keeping sensitive information secure.
 
-Here are some of my recent projects:
+Install the following dependency:
 
-1. **Demo**: A first try at a PHP website. [View Project](https://github.com/AmarBego/demo)
-
+```bash
+composer require vlucas/phpdotenv
+```
 ## Contact
 
-Feel free to reach out to me:
-
 - GitHub: [AmarBego](https://github.com/AmarBego)
-
-Thank you for visiting my website!

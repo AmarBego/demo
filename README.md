@@ -3,6 +3,7 @@
 ## About Me
 
 Hello! I'm Amar, a web developer with a passion for creating beautiful and functional websites.
+This uses a template from Tailwindui.com
 
 ### My Skills
 

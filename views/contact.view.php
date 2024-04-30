@@ -12,7 +12,5 @@
             <p>Contact us</p>
         </div>
     </main>
-</div>
-</body>
+<?php require('partials/footer.php')?>
 
-</html>

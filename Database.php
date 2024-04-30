@@ -14,7 +14,7 @@ class Database
         $dotenv = Dotenv::createImmutable(__DIR__);
         $dotenv->load();
 
-        // to use your own server make a .env file and use these values
+        // to use your own database rename .env.example => .env and fill out accordingly
         $dsn = sprintf(
             'mysql:host=%s;port=%s;dbname=%s;charset=%s',
             $_ENV['DB_HOST'],
@@ -23,9 +23,14 @@ class Database
             $_ENV['DB_CHARSET']
         );
 
-        $this->connection = new PDO($dsn, $_ENV['DB_USER'], $_ENV['DB_PSWD'], [
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-        ]);
+        $this->connection = new PDO(
+            $dsn,
+            $_ENV['DB_USERNAME'],
+            $_ENV['DB_PASSWORD'],
+            [
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+            ]
+        );
     }
 
     public function query($query)

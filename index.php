@@ -5,6 +5,6 @@ require 'Database.php';
 
 
 $db = new Database();
-$post = $db->query("SELECT * FROM posts WHERE id = 1")->fetch(PDO::FETCH_ASSOC);
+$posts = $db->query("SELECT * FROM posts WHERE id = 1")->fetchAll();
 
-dd($post['title']);
+dd($posts);
